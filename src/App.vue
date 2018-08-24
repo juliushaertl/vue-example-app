@@ -8,7 +8,6 @@
 		<div id="app-content">
 			<div class="vueexample__container">
 				<h3>Nextcloud app example with vue components</h3>
-				<popover-menu-button :menu="menuPopover"></popover-menu-button>
 			</div>
 		</div>
 	</div>
@@ -18,14 +17,13 @@
 	// TODO: move to package once published to npm
 	import {
 		PopoverMenu,
-		AppNavigation,
-		PopoverMenuButton
-	} from 'nextcloud-vue-components';
+		AppNavigation
+	} from 'vue-components';
 
 	export default {
 		name: 'App',
 		components: {
-			PopoverMenu, AppNavigation, PopoverMenuButton
+			PopoverMenu, AppNavigation
 		},
 		data: function () {
 			return {
